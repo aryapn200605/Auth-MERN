@@ -1,0 +1,36 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJBcnlhIFB1dHJhIE51Z3JvaG8iLCJlbWFpbCI6ImFyeWFwbjIwMDYwNUBnbWFpbC5jb20iLCJpYXQiOjE2ODAzMjEzMDcsImV4cCI6MTY4MDMyMTMyN30.0fvQ-Nokshs9yYHa9Z2ouMXhLW1hndnK3SnqXFKnoHg
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Arya Putra Nugroho",
+    "email": "aryapn200605@gmail.com",
+    "password": "200605aryapn",
+    "confirmPassword": "200605aryapn"
+}
+
+{
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "password": "admin123",
+    "confirmPassword": "admin123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "aryapn200605@gmail.com",
+    "password": "200605aryapn"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
